@@ -4,7 +4,11 @@ import xelitexirish.com.easyexaminations.MainActivity;
 
 public class Enum2013 {
 
-    public MainActivity activity = new MainActivity();
+    MainActivity activity;
+
+    public Enum2013(MainActivity activity){
+        this.activity = activity;
+    }
 
     public SubjectEnum getEnum(){
 

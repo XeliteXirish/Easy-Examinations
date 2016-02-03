@@ -21,9 +21,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -36,7 +34,7 @@ import xelitexirish.com.easyexaminations.SubjectEnums.Enum2011;
 import xelitexirish.com.easyexaminations.SubjectEnums.Enum2012;
 import xelitexirish.com.easyexaminations.SubjectEnums.Enum2013;
 import xelitexirish.com.easyexaminations.SubjectEnums.Enum2014;
-import xelitexirish.com.easyexaminations.SubjectEnums.Enums2015;
+import xelitexirish.com.easyexaminations.SubjectEnums.Enum2015;
 import xelitexirish.com.easyexaminations.SubjectEnums.SubjectEnum;
 import xelitexirish.com.easyexaminations.about.AboutActivity;
 import xelitexirish.com.easyexaminations.settings.SettingsActivity;
@@ -211,24 +209,24 @@ public class MainActivity extends AppCompatActivity {
 
     public SubjectEnum getUnum() {
         if(this.selectedItems[PLACE_YEAR].equals(year2015)) { // 2015
-            Enums2015 enums2015 = new Enums2015(this);
-            return enums2015.getEnum();
+            Enum2015 enum2015 = new Enum2015(this);
+            return enum2015.getEnum();
 
         }else if (this.selectedItems[PLACE_YEAR].equals(year2014)) {
-            Enum2014 enum2014 = new Enum2014();
+            Enum2014 enum2014 = new Enum2014(this);
             return enum2014.getEnum();
 
             // Year 2013
         }else if (this.selectedItems[PLACE_YEAR].equals(year2013)) {
-            Enum2013 enum2013 = new Enum2013();
+            Enum2013 enum2013 = new Enum2013(this);
             return enum2013.getEnum();
 
         }else if(this.selectedItems[PLACE_YEAR].equals(year2012)) {
-            Enum2012 enum2012 = new Enum2012();
+            Enum2012 enum2012 = new Enum2012(this);
             return enum2012.getEnum();
 
         }else if(this.selectedItems[PLACE_YEAR].equals(year2011)){
-            Enum2011 enum2011 = new Enum2011();
+            Enum2011 enum2011 = new Enum2011(this);
             return enum2011.getEnum();
 
         }else {
