@@ -21,7 +21,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -47,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
     Spinner dropdownYear;
     Spinner dropdownSubject;
     Spinner dropdownLevel;
+
+    CheckBox boxPaper1;
+    CheckBox boxPaper2;
 
     DownloadManager manager;
     long downloadID;
@@ -105,7 +110,46 @@ public class MainActivity extends AppCompatActivity {
 //        getSupportActionBar().setLogo(R.drawable.icon);
 
         doDropDowns();
+        doCheckBoxs();
         doAds();
+
+        this.dropdownYear.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                setItems();
+                setCheckBoxs();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        this.dropdownSubject.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                setItems();
+                setCheckBoxs();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+        this.dropdownLevel.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                setItems();
+                setCheckBoxs();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
     }
 
     @Override
@@ -146,6 +190,14 @@ public class MainActivity extends AppCompatActivity {
         dropdownLevel.setAdapter(arrayAdapterLevels);
     }
 
+    public void doCheckBoxs(){
+        this.boxPaper1 = (CheckBox) findViewById(R.id.boxPaper1);
+        this.boxPaper2 = (CheckBox) findViewById(R.id.boxPaper2);
+
+        this.boxPaper1.setAlpha(0.4F);
+        this.boxPaper2.setAlpha(0.4F);
+    }
+
     public void doAds(){
         AdView adView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -166,10 +218,14 @@ public class MainActivity extends AppCompatActivity {
         setItems();
         if(getUnum() != null) {
             SubjectEnum subjectEnum = getUnum();
-            if(doesFileExist(getNameForFile())){
-                showAlertBox(subjectEnum, 0);
+            if (subjectEnum.hasPaper1()) {
+                if (doesFileExist(getNameForFile())) {
+                    showAlertBox(subjectEnum, 0);
+                } else {
+                    downloadFile(subjectEnum.getUrlP1());
+                }
             }else{
-                downloadFile(subjectEnum.getUrlP1());
+                Toast.makeText(MainActivity.this, "No paper 1 for this exam found.", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -184,7 +240,6 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     downloadFile(subjectEnum.getUrlP2());
                 }
-
             } else {
                 Toast.makeText(MainActivity.this, "No paper 2 for this exam found.", Toast.LENGTH_LONG).show();
             }
@@ -296,8 +351,6 @@ public class MainActivity extends AppCompatActivity {
 
                     downloadID = manager.enqueue(request);
                     Toast.makeText(this, "Downloading file...", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(MainActivity.this, "No paper 1 for this exam found.", Toast.LENGTH_LONG).show();
                 }
             }
         }else{
@@ -415,5 +468,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void setCheckBoxs(){
+        if(this.getUnum() != null) {
+            this.boxPaper1.setChecked(this.getUnum().hasPaper1());
+            this.boxPaper2.setChecked(this.getUnum().hasPaper2());
+        }else{
+            this.boxPaper1.setChecked(false);
+            this.boxPaper2.setChecked(false);
+        }
     }
 }

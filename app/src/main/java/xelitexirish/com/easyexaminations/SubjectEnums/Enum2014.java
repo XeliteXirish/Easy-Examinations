@@ -68,9 +68,9 @@ public class Enum2014 {
             }
         } else if (activity.selectedItems[activity.PLACE_SUBJECT].equals(activity.PHYSICS)) {
             if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCOL)) {
-                return null;
+                return SubjectEnum.PHYSICS20140;
             } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCHL)) {
-                return null;
+                return SubjectEnum.PHYSICS20141;
             } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCOL)) {
                 return SubjectEnum.PHYSICS20142;
             } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCHL)) {
@@ -88,9 +88,9 @@ public class Enum2014 {
             }
         } else if (activity.selectedItems[activity.PLACE_SUBJECT].equals(activity.CHEMISTRY)) {
             if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCOL)) {
-                return null;
+                return SubjectEnum.BIOLOGY20140;
             } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCHL)) {
-                return null;
+                return SubjectEnum.BIOLOGY20141;
             } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCOL)) {
                 return SubjectEnum.CHEMISTRY20142;
             } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCHL)) {
