@@ -383,8 +383,8 @@ public enum SubjectEnum {
     BUSINESS20112(Urls.LeavingCert.OL.Business.p12011, "", Urls.LeavingCert.OL.Business.marking2011),
     BUSINESS20113(Urls.LeavingCert.HL.Business.p12011, "", Urls.LeavingCert.HL.Business.marking2011),
 
-    TECHNOLOGY20110(Urls.JuniorCert.OL.Technology.p12011, "", ""),
-    TECHNOLOGY20111(Urls.JuniorCert.HL.Technology.p12011, "", Urls.JuniorCert.HL.Technology.marking2012),
+    TECHNOLOGY20110(Urls.JuniorCert.OL.Technology.p12011, "", Urls.JuniorCert.OL.Technology.marking2011),
+    TECHNOLOGY20111(Urls.JuniorCert.HL.Technology.p12011, "", Urls.JuniorCert.HL.Technology.marking2011),
     TECHNOLOGY20112(Urls.LeavingCert.OL.Technology.p12011, Urls.LeavingCert.OL.Technology.p22011, Urls.LeavingCert.OL.Technology.marking2011),
     TECHNOLOGY20113(Urls.LeavingCert.HL.Technology.p12011, Urls.LeavingCert.HL.Technology.p22011, Urls.LeavingCert.HL.Technology.marking2011),
 
