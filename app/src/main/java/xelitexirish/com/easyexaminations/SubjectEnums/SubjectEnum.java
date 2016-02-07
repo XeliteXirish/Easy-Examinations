@@ -391,21 +391,95 @@ public enum SubjectEnum {
     HOMEEC20110(Urls.JuniorCert.OL.HomeEconomics.p12011, "", Urls.JuniorCert.OL.HomeEconomics.marking2011),
     HOMEEC20111(Urls.JuniorCert.HL.HomeEconomics.p12011, "", Urls.JuniorCert.HL.HomeEconomics.marking2011),
     HOMEEC20112(Urls.LeavingCert.OL.HomeEconomics.p12011, "", Urls.LeavingCert.OL.HomeEconomics.marking2011),
-    HOMEEC20113(Urls.LeavingCert.HL.HomeEconomics.p12011, "", Urls.LeavingCert.HL.HomeEconomics.marking2011);
+    HOMEEC20113(Urls.LeavingCert.HL.HomeEconomics.p12011, "", Urls.LeavingCert.HL.HomeEconomics.marking2011),
+
+    /**
+     * 2010
+     */
+    MATHS20100(Urls.JuniorCert.OL.Maths.p12010, Urls.JuniorCert.OL.Maths.p22010, Urls.JuniorCert.OL.Maths.marking2010),
+    MATHS20101(Urls.JuniorCert.HL.Maths.p12010, Urls.JuniorCert.HL.Maths.p22010, Urls.JuniorCert.HL.Maths.marking2010),
+    MATHS20102(Urls.LeavingCert.OL.Maths.p12010, Urls.LeavingCert.OL.Maths.p22010, Urls.LeavingCert.OL.Maths.marking2010),
+    MATHS20103(Urls.LeavingCert.HL.Maths.p12010, Urls.LeavingCert.HL.Maths.p22010, Urls.LeavingCert.HL.Maths.marking2010),
+
+    ENGLISH20100("", "", Urls.JuniorCert.OL.English.marking2010),
+    ENGLISH20101(Urls.JuniorCert.HL.English.p12010, Urls.JuniorCert.HL.English.p22010, Urls.JuniorCert.HL.English.marking2010),
+    ENGLISH20102(Urls.LeavingCert.OL.English.p12010, Urls.LeavingCert.OL.English.p22010, Urls.LeavingCert.OL.English.marking2010),
+    ENGLISH20103(Urls.LeavingCert.HL.English.p12010, Urls.LeavingCert.HL.English.p22010, Urls.LeavingCert.HL.English.marking2010),
+
+    IRISH20100("", "", Urls.JuniorCert.OL.Irish.marking2010),
+    IRISH20101(Urls.JuniorCert.HL.Irish.p12010, Urls.JuniorCert.HL.Irish.p22010, Urls.JuniorCert.HL.Irish.marking2010),
+    IRISH20102(Urls.LeavingCert.OL.Irish.p12010, Urls.LeavingCert.OL.Irish.p22010, ""),
+    IRISH20103(Urls.LeavingCert.HL.Irish.p12010, Urls.LeavingCert.HL.Irish.p22010, ""),
+
+    FRENCH20100(Urls.JuniorCert.OL.French.p12010, "", Urls.JuniorCert.OL.French.marking2010),
+    FRENCH20101(Urls.JuniorCert.HL.French.p12010, "", Urls.JuniorCert.HL.French.marking2010),
+    FRENCH20102(Urls.LeavingCert.OL.French.p12010, "", Urls.LeavingCert.OL.French.marking2010),
+    FRENCH20103(Urls.LeavingCert.HL.French.p12010, "", Urls.LeavingCert.HL.French.marking2010),
+
+    GERMAN20100("", "", Urls.JuniorCert.OL.German.marking2010),
+    GERMAN20101(Urls.JuniorCert.HL.German.p12010, "", Urls.JuniorCert.HL.German.marking2010),
+    GERMAN20102(Urls.LeavingCert.OL.German.p12010, "", Urls.LeavingCert.OL.German.marking2010),
+    GERMAN20103(Urls.LeavingCert.HL.German.p12010, "", Urls.LeavingCert.HL.German.marking2010),
+
+    PHYSICS20100("", "", ""),
+    PHYSICS20101("", "", ""),
+    PHYSICS20102(Urls.LeavingCert.OL.Physics.p12010, "", Urls.LeavingCert.OL.Physics.marking2010),
+    PHYSICS20103(Urls.LeavingCert.HL.Physics.p12010, "", Urls.LeavingCert.HL.Physics.marking2010),
+
+    BIOLOGY20100("", "", ""),
+    BIOLOGY20101("", "", ""),
+    BIOLOGY20102(Urls.LeavingCert.OL.Biology.p12010, "", Urls.LeavingCert.OL.Biology.marking2010),
+    BIOLOGY20103(Urls.LeavingCert.HL.Biology.p12010, "", Urls.LeavingCert.HL.Biology.marking2010),
+
+    CHEMISTRY20100("", "", ""),
+    CHEMISTRY20101("", "", ""),
+    CHEMISTRY20102(Urls.LeavingCert.OL.Chemistry.p12010, "", Urls.LeavingCert.OL.Chemistry.marking2010),
+    CHEMISTRY20103(Urls.LeavingCert.HL.Chemistry.p12010, "", Urls.LeavingCert.HL.Chemistry.marking2010),
+
+    GEOGRAPHY20100(Urls.JuniorCert.OL.Geography.p12010, "", ""),
+    GEOGRAPHY20101(Urls.JuniorCert.HL.Geography.p12010, "", ""),
+    GEOGRAPHY20102(Urls.LeavingCert.OL.Geography.p12010, "", Urls.LeavingCert.OL.Geography.marking2010),
+    GEOGRAPHY20103(Urls.LeavingCert.HL.Geography.p12010, "", Urls.LeavingCert.HL.Geography.marking2010),
+
+    HISTORY20100(Urls.JuniorCert.OL.History.p12010, "", Urls.JuniorCert.OL.History.marking2010),
+    HISTORY20101(Urls.JuniorCert.HL.History.p12010, "", Urls.JuniorCert.HL.History.marking2010),
+    HISTORY20102(Urls.LeavingCert.OL.History.p12010, "", Urls.LeavingCert.OL.History.marking2010),
+    HISTORY20103(Urls.LeavingCert.HL.History.p12010, "", Urls.LeavingCert.HL.History.marking2010),
+
+    ACCOUNTING20100("", "", ""),
+    ACCOUNTING20101("", "", ""),
+    ACCOUNTING20102(Urls.LeavingCert.OL.Accounting.p12010, "", Urls.LeavingCert.OL.Accounting.marking2010),
+    ACCOUNTING20103(Urls.LeavingCert.HL.Accounting.p12010, "", Urls.LeavingCert.HL.Accounting.marking2010),
+
+    ECONOMICS20100("", "", ""),
+    ECONOMICS20101("", "", ""),
+    ECONOMICS20102(Urls.LeavingCert.OL.Economics.p12010, "", Urls.LeavingCert.OL.Economics.marking2010),
+    ECONOMICS20103(Urls.LeavingCert.HL.Economics.p12010, "", Urls.LeavingCert.HL.Economics.marking2010),
+
+    BUSINESS20100("", "", ""),
+    BUSINESS20101("", "", ""),
+    BUSINESS20102(Urls.LeavingCert.OL.Business.p12010, "", Urls.LeavingCert.OL.Business.marking2010),
+    BUSINESS20103(Urls.LeavingCert.HL.Business.p12010, "", Urls.LeavingCert.HL.Business.marking2010),
+
+    TECHNOLOGY20100(Urls.JuniorCert.OL.Technology.p12010, "", Urls.JuniorCert.OL.Technology.marking2010),
+    TECHNOLOGY20101(Urls.JuniorCert.HL.Technology.p12010, "", Urls.JuniorCert.HL.Technology.marking2010),
+    TECHNOLOGY20102(Urls.LeavingCert.OL.Technology.p12010, Urls.LeavingCert.OL.Technology.p22010, Urls.LeavingCert.OL.Technology.marking2010),
+    TECHNOLOGY20103(Urls.LeavingCert.HL.Technology.p12010, Urls.LeavingCert.HL.Technology.p22010, Urls.LeavingCert.HL.Technology.marking2010),
+
+    HOMEEC20100(Urls.JuniorCert.OL.HomeEconomics.p12010, "", Urls.JuniorCert.OL.HomeEconomics.marking2010),
+    HOMEEC20101(Urls.JuniorCert.HL.HomeEconomics.p12010, "", Urls.JuniorCert.HL.HomeEconomics.marking2010),
+    HOMEEC20102(Urls.LeavingCert.OL.HomeEconomics.p12010, "", Urls.LeavingCert.OL.HomeEconomics.marking2010),
+    HOMEEC20103(Urls.LeavingCert.HL.HomeEconomics.p12010, "", Urls.LeavingCert.HL.HomeEconomics.marking2010);
 
     String urlP1;
     String urlP2;
     String urlMarking;
-    boolean hasMarking;
-    boolean hasPaper2;
 
     SubjectEnum(String urlP1, String urlP2, String urlMarking){
 
         this.urlP1 = urlP1;
         this.urlP2 = urlP2;
         this.urlMarking = urlMarking;
-        this.hasPaper2 = hasPaper2;
-        this.hasMarking = hasMarking;
     }
 
     public String getUrlP1(){

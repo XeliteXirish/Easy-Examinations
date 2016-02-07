@@ -32,6 +32,7 @@ import com.google.android.gms.ads.AdView;
 
 import java.io.File;
 
+import xelitexirish.com.easyexaminations.SubjectEnums.Enum2010;
 import xelitexirish.com.easyexaminations.SubjectEnums.Enum2011;
 import xelitexirish.com.easyexaminations.SubjectEnums.Enum2012;
 import xelitexirish.com.easyexaminations.SubjectEnums.Enum2013;
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public Integer year2013 = 2;
     public Integer year2012 = 3;
     public Integer year2011 = 4;
+    public Integer year2010 = 5;
 
     public Integer ACCOUNTING = 0;
     public Integer BIOLOGY = 1;
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     public Integer TECHNOLOGY = 13;
     public Integer HISTORY = 14;
 
-    String[] years = new String[]{"2015", "2014", "2013", "2012", "2011"};
+    String[] years = new String[]{"2015", "2014", "2013", "2012", "2011", "2010"};
     String[] subjects = new String[]{"Accounting [LC]", "Biology", "Business", "Chemistry [LC]", "Economics [LC]", "English", "French", "Geography", "German", "Home Ec", "Irish", "Maths", "Physics [LC]", "Technology", "History"};
     String[] levels = new String[]{"Junior Cert. - Ordinary Level", "Junior Cert. - Higher Level", "Leaving Cert. - Ordinary Level", "Leaving Cert. - Higher Level"};
 
@@ -280,9 +282,13 @@ public class MainActivity extends AppCompatActivity {
             Enum2012 enum2012 = new Enum2012(this);
             return enum2012.getEnum();
 
-        }else if(this.selectedItems[PLACE_YEAR].equals(year2011)){
+        }else if(this.selectedItems[PLACE_YEAR].equals(year2011)) {
             Enum2011 enum2011 = new Enum2011(this);
             return enum2011.getEnum();
+
+        }else if(this.selectedItems[PLACE_YEAR].equals(year2010)) {
+            Enum2010 enum2010 = new Enum2010(this);
+            return enum2010.getEnum();
 
         }else {
             Toast.makeText(MainActivity.this, "ERORR OCCURED", Toast.LENGTH_LONG).show();
