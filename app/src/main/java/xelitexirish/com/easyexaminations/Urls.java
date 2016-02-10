@@ -785,14 +785,6 @@ public class Urls {
 
             }
 
-            public static class Metalwork{
-
-            }
-
-            public static class Woodwork {
-
-            }
-
         }
 
         public static class HL {
@@ -1134,14 +1126,6 @@ public class Urls {
             }
 
             public static class Religion{
-
-            }
-
-            public static class Metalwork{
-
-            }
-
-            public static class Woodwork {
 
             }
         }
