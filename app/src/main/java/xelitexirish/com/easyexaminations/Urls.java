@@ -196,6 +196,18 @@ public class Urls {
 
             }
 
+            public static class Religion{
+
+            }
+
+            public static class Metalwork{
+
+            }
+
+            public static class Woodwork {
+
+            }
+
         }
 
         public static class HL {
@@ -413,6 +425,18 @@ public class Urls {
                 public static final String p12010 = "";
                 public static final String p22010 = "";
                 public static final String marking2010 = "";
+
+            }
+
+            public static class Religion{
+
+            }
+
+            public static class Metalwork{
+
+            }
+
+            public static class Woodwork {
 
             }
         }
@@ -757,6 +781,18 @@ public class Urls {
 
             }
 
+            public static class Religion{
+
+            }
+
+            public static class Metalwork{
+
+            }
+
+            public static class Woodwork {
+
+            }
+
         }
 
         public static class HL {
@@ -1094,6 +1130,18 @@ public class Urls {
 
                 public static final String p12010 = "http://examinations.ie/exammaterialarchive/?fp=43.114.93.110.43.115.115.115.43.93.110.95.100.101.114.97.41.106.97.115.43.97.116.93.105.108.93.108.97.110.111.43.46.44.45.44.43.72.63.44.53.52.61.72.76.44.44.44.65.82.42.108.96.98.102#page=";
                 public static final String marking2010 = "http://examinations.ie/exammaterialarchive/?fp=41.112.91.108.41.113.113.113.41.91.108.93.98.99.112.95.39.104.95.113.41.103.91.108.101.99.104.97.109.93.98.95.103.95.109.41.44.42.43.42.41.70.61.42.51.50.59.70.74.42.42.42.63.80.40.106.94.96.104#page=";
+
+            }
+
+            public static class Religion{
+
+            }
+
+            public static class Metalwork{
+
+            }
+
+            public static class Woodwork {
 
             }
         }
