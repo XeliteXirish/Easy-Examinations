@@ -8,13 +8,16 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.ColorStateList;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -53,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
 
     CheckBox boxPaper1;
     CheckBox boxPaper2;
+
+    FloatingActionButton fab;
 
     DownloadManager manager;
     long downloadID;
@@ -107,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         manager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
+        this.fab = (FloatingActionButton) findViewById(R.id.fabMarking);
 
 //        getSupportActionBar().setDisplayShowHomeEnabled(true);
 //        getSupportActionBar().setLogo(R.drawable.icon);
@@ -320,8 +326,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean hasConnection(){
         ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = connectivityManager.getActiveNetworkInfo();
-        if(info.getState() == NetworkInfo.State.CONNECTED){
-            return true;
+        if(info != null) {
+            if (info.getState() == NetworkInfo.State.CONNECTED) {
+                return true;
+            }else{
+                return false;
+            }
         }
         return false;
     }
@@ -377,6 +387,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case DownloadManager.STATUS_SUCCESSFUL:
                     try {
+                        Toast.makeText(this, "Download Complete", Toast.LENGTH_SHORT).show();
                         openLocalFile(getNameForFile());
 
                     } catch (Exception e) {
@@ -480,9 +491,15 @@ public class MainActivity extends AppCompatActivity {
         if(this.getUnum() != null) {
             this.boxPaper1.setChecked(this.getUnum().hasPaper1());
             this.boxPaper2.setChecked(this.getUnum().hasPaper2());
+            if(this.getUnum().hasMarking()){
+                this.fab.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
+            }else{
+                this.fab.setBackgroundTintList(ColorStateList.valueOf(Color.RED));
+            }
         }else{
             this.boxPaper1.setChecked(false);
             this.boxPaper2.setChecked(false);
+            this.fab.setBackgroundTintList(ColorStateList.valueOf(Color.RED));
         }
     }
 }
