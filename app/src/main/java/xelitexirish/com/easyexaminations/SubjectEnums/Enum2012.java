@@ -164,6 +164,36 @@ public class Enum2012 {
             } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCHL)) {
                 return SubjectEnum.HOMEEC20123;
             }
+        } else if (activity.selectedItems[activity.PLACE_SUBJECT].equals(activity.RELIGION)) {
+            if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCOL)) {
+                return SubjectEnum.RELIGION20120;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCHL)) {
+                return SubjectEnum.RELIGION20121;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCOL)) {
+                return SubjectEnum.RELIGION20122;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCHL)) {
+                return SubjectEnum.RELIGION20123;
+            }
+        } else if (activity.selectedItems[activity.PLACE_SUBJECT].equals(activity.METALWORK)) {
+            if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCOL)) {
+                return SubjectEnum.METALWORK20120;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCHL)) {
+                return SubjectEnum.METALWORK20121;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCOL)) {
+                return SubjectEnum.METALWORK20122;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCHL)) {
+                return SubjectEnum.METALWORK20123;
+            }
+        } else if (activity.selectedItems[activity.PLACE_SUBJECT].equals(activity.WOODWORK)) {
+            if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCOL)) {
+                return SubjectEnum.WOODWORK20120;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.JCHL)) {
+                return SubjectEnum.WOODWORK20121;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCOL)) {
+                return SubjectEnum.WOODWORK20122;
+            } else if (activity.selectedItems[activity.PLACE_LEVEL].equals(activity.LCHL)) {
+                return SubjectEnum.WOODWORK20123;
+            }
         }
         return null;
     }

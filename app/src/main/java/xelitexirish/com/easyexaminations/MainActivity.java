@@ -93,12 +93,15 @@ public class MainActivity extends AppCompatActivity {
     public Integer HOMEEC = 9;
     public Integer IRISH = 10;
     public Integer MATHS = 11;
-    public Integer PHYSICS = 12;
-    public Integer TECHNOLOGY = 13;
-    public Integer HISTORY = 14;
+    public Integer METALWORK = 12;
+    public Integer PHYSICS = 13;
+    public Integer RELIGION = 14;
+    public Integer TECHNOLOGY = 15;
+    public Integer HISTORY = 16;
+    public Integer WOODWORK = 17;
 
     String[] years = new String[]{"2015", "2014", "2013", "2012", "2011", "2010"};
-    String[] subjects = new String[]{"Accounting [LC]", "Biology", "Business", "Chemistry [LC]", "Economics [LC]", "English", "French", "Geography", "German", "Home Ec", "Irish", "Maths", "Physics [LC]", "Technology", "History"};
+    String[] subjects = new String[]{"Accounting [LC]", "Biology", "Business", "Chemistry [LC]", "Economics [LC]", "English", "French", "Geography", "German", "Home Ec", "Irish", "Maths", "MetalWork [JC]", "Physics [LC]", "Religion", "Technology", "History", "Woodwork"};
     String[] levels = new String[]{"Junior Cert. - Ordinary Level", "Junior Cert. - Higher Level", "Leaving Cert. - Ordinary Level", "Leaving Cert. - Higher Level"};
 
     // [0] = year, [1] = subject, [2] = level

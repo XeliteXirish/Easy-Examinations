@@ -81,6 +81,21 @@ public enum SubjectEnum {
     HOMEEC20152(Urls.LeavingCert.OL.HomeEconomics.p12015, "", Urls.LeavingCert.OL.HomeEconomics.marking2015),
     HOMEEC20153(Urls.LeavingCert.HL.HomeEconomics.p12015, "", Urls.LeavingCert.HL.HomeEconomics.marking2015),
 
+    RELIGION20150(Urls.JuniorCert.OL.Religion.p12015, "", Urls.JuniorCert.OL.Religion.marking2015),
+    RELIGION20151(Urls.JuniorCert.HL.Religion.p12015, "", Urls.JuniorCert.HL.Religion.marking2015),
+    RELIGION20152(Urls.LeavingCert.OL.Religion.p12015, "", ""),
+    RELIGION20153(Urls.LeavingCert.HL.Religion.p12015, "", ""),
+
+    METALWORK20150(Urls.JuniorCert.OL.Metalwork.p12015, "", Urls.JuniorCert.OL.Metalwork.marking2015),
+    METALWORK20151(Urls.JuniorCert.HL.Metalwork.p12015, "", Urls.JuniorCert.HL.Metalwork.marking2015),
+    METALWORK20152("", "", ""),
+    METALWORK20153("", "", ""),
+
+    WOODWORK20150(Urls.JuniorCert.OL.Woodwork.p12015, Urls.JuniorCert.OL.Woodwork.p22015, Urls.JuniorCert.OL.Woodwork.marking2015),
+    WOODWORK20151(Urls.JuniorCert.OL.Woodwork.p12015, Urls.JuniorCert.OL.Woodwork.p22015, Urls.JuniorCert.OL.Woodwork.marking2015),
+    WOODWORK20152("", "", ""),
+    WOODWORK20153("", "", ""),
+
     /**
      * 2014
      */
@@ -158,6 +173,21 @@ public enum SubjectEnum {
     HOMEEC20141(Urls.JuniorCert.HL.HomeEconomics.p12014, Urls.JuniorCert.HL.HomeEconomics.p22014, Urls.JuniorCert.HL.HomeEconomics.marking2014),
     HOMEEC20142(Urls.LeavingCert.OL.HomeEconomics.p12014, "", Urls.LeavingCert.OL.HomeEconomics.marking2014),
     HOMEEC20143(Urls.LeavingCert.HL.HomeEconomics.p12014, "", Urls.LeavingCert.HL.HomeEconomics.marking2014),
+
+    RELIGION20140(Urls.JuniorCert.OL.Religion.p12014, "", Urls.JuniorCert.OL.Religion.marking2014),
+    RELIGION20141(Urls.JuniorCert.HL.Religion.p12014, "", Urls.JuniorCert.HL.Religion.marking2014),
+    RELIGION20142(Urls.LeavingCert.OL.Religion.p12014, "", Urls.LeavingCert.OL.Religion.marking2014),
+    RELIGION20143(Urls.LeavingCert.HL.Religion.p12014, "", ""),
+
+    METALWORK20140(Urls.JuniorCert.OL.Metalwork.p12014, "", Urls.JuniorCert.OL.Metalwork.marking2014),
+    METALWORK20141(Urls.JuniorCert.HL.Metalwork.p12014, "", Urls.JuniorCert.HL.Metalwork.marking2014),
+    METALWORK20142("", "", ""),
+    METALWORK20143("", "", ""),
+
+    WOODWORK20140(Urls.JuniorCert.OL.Woodwork.p12014, Urls.JuniorCert.OL.Woodwork.p22014, Urls.JuniorCert.OL.Woodwork.marking2014),
+    WOODWORK20141(Urls.JuniorCert.OL.Woodwork.p12014, Urls.JuniorCert.OL.Woodwork.p22014, Urls.JuniorCert.OL.Woodwork.marking2014),
+    WOODWORK20142("", "", ""),
+    WOODWORK20143("", "", ""),
 
     /**
      * 2013
@@ -237,6 +267,21 @@ public enum SubjectEnum {
     HOMEEC20132(Urls.LeavingCert.OL.HomeEconomics.p12013, "", Urls.LeavingCert.OL.HomeEconomics.marking2013),
     HOMEEC20133(Urls.LeavingCert.HL.HomeEconomics.p12013, "", Urls.LeavingCert.HL.HomeEconomics.marking2013),
 
+    RELIGION20130(Urls.JuniorCert.OL.Religion.p12013, "", Urls.JuniorCert.OL.Religion.marking2013),
+    RELIGION20131(Urls.JuniorCert.HL.Religion.p12013, "", Urls.JuniorCert.HL.Religion.marking2013),
+    RELIGION20132(Urls.LeavingCert.OL.Religion.p12013, "", ""),
+    RELIGION20133(Urls.LeavingCert.HL.Religion.p12013, "", ""),
+
+    METALWORK20130(Urls.JuniorCert.OL.Metalwork.p12013, "", Urls.JuniorCert.OL.Metalwork.marking2013),
+    METALWORK20131(Urls.JuniorCert.HL.Metalwork.p12013, "", Urls.JuniorCert.HL.Metalwork.marking2013),
+    METALWORK20132("", "", ""),
+    METALWORK20133("", "", ""),
+
+    WOODWORK20130(Urls.JuniorCert.OL.Woodwork.p12013, Urls.JuniorCert.OL.Woodwork.p22013, Urls.JuniorCert.OL.Woodwork.marking2013),
+    WOODWORK20131(Urls.JuniorCert.OL.Woodwork.p12013, Urls.JuniorCert.OL.Woodwork.p22013, Urls.JuniorCert.OL.Woodwork.marking2013),
+    WOODWORK20132("", "", ""),
+    WOODWORK20133("", "", ""),
+
     /**
      * 2012
      */
@@ -314,6 +359,21 @@ public enum SubjectEnum {
     HOMEEC20121(Urls.JuniorCert.HL.HomeEconomics.p12012, Urls.JuniorCert.HL.HomeEconomics.p22012, Urls.JuniorCert.HL.HomeEconomics.marking2012),
     HOMEEC20122(Urls.LeavingCert.OL.HomeEconomics.p12012, "", Urls.LeavingCert.OL.HomeEconomics.marking2012),
     HOMEEC20123(Urls.LeavingCert.HL.HomeEconomics.p12012, "", Urls.LeavingCert.HL.HomeEconomics.marking2012),
+
+    RELIGION20120(Urls.JuniorCert.OL.Religion.p12012, "", Urls.JuniorCert.OL.Religion.marking2012),
+    RELIGION20121(Urls.JuniorCert.HL.Religion.p12012, "", Urls.JuniorCert.HL.Religion.marking2012),
+    RELIGION20122(Urls.LeavingCert.OL.Religion.p12012, "", ""),
+    RELIGION20123(Urls.LeavingCert.HL.Religion.p12012, "", ""),
+
+    METALWORK20120(Urls.JuniorCert.OL.Metalwork.p12012, "", Urls.JuniorCert.OL.Metalwork.marking2012),
+    METALWORK20121(Urls.JuniorCert.HL.Metalwork.p12012, "", Urls.JuniorCert.HL.Metalwork.marking2012),
+    METALWORK20122("", "", ""),
+    METALWORK20123("", "", ""),
+
+    WOODWORK20120(Urls.JuniorCert.OL.Woodwork.p12012, Urls.JuniorCert.OL.Woodwork.p22012, Urls.JuniorCert.OL.Woodwork.marking2012),
+    WOODWORK20121(Urls.JuniorCert.OL.Woodwork.p12012, Urls.JuniorCert.OL.Woodwork.p22012, Urls.JuniorCert.OL.Woodwork.marking2012),
+    WOODWORK20122("", "", ""),
+    WOODWORK20123("", "", ""),
 
     /**
      * 2011
@@ -393,6 +453,21 @@ public enum SubjectEnum {
     HOMEEC20112(Urls.LeavingCert.OL.HomeEconomics.p12011, "", Urls.LeavingCert.OL.HomeEconomics.marking2011),
     HOMEEC20113(Urls.LeavingCert.HL.HomeEconomics.p12011, "", Urls.LeavingCert.HL.HomeEconomics.marking2011),
 
+    RELIGION20110("", "", Urls.JuniorCert.OL.Religion.marking2011),
+    RELIGION20111(Urls.JuniorCert.HL.Religion.p12011, "", Urls.JuniorCert.HL.Religion.marking2011),
+    RELIGION20112(Urls.LeavingCert.OL.Religion.p12011, "", ""),
+    RELIGION20113(Urls.LeavingCert.HL.Religion.p12011, "", ""),
+
+    METALWORK20110(Urls.JuniorCert.OL.Metalwork.p12011, "", Urls.JuniorCert.OL.Metalwork.marking2011),
+    METALWORK20111(Urls.JuniorCert.HL.Metalwork.p12011, "", Urls.JuniorCert.HL.Metalwork.marking2011),
+    METALWORK20112("", "", ""),
+    METALWORK20113("", "", ""),
+
+    WOODWORK20110(Urls.JuniorCert.OL.Woodwork.p12011, Urls.JuniorCert.OL.Woodwork.p22011, Urls.JuniorCert.OL.Woodwork.marking2011),
+    WOODWORK20111(Urls.JuniorCert.OL.Woodwork.p12011, Urls.JuniorCert.OL.Woodwork.p22011, Urls.JuniorCert.OL.Woodwork.marking2011),
+    WOODWORK20112("", "", ""),
+    WOODWORK20113("", "", ""),
+
     /**
      * 2010
      */
@@ -469,7 +544,23 @@ public enum SubjectEnum {
     HOMEEC20100(Urls.JuniorCert.OL.HomeEconomics.p12010, "", Urls.JuniorCert.OL.HomeEconomics.marking2010),
     HOMEEC20101(Urls.JuniorCert.HL.HomeEconomics.p12010, "", Urls.JuniorCert.HL.HomeEconomics.marking2010),
     HOMEEC20102(Urls.LeavingCert.OL.HomeEconomics.p12010, "", Urls.LeavingCert.OL.HomeEconomics.marking2010),
-    HOMEEC20103(Urls.LeavingCert.HL.HomeEconomics.p12010, "", Urls.LeavingCert.HL.HomeEconomics.marking2010);
+    HOMEEC20103(Urls.LeavingCert.HL.HomeEconomics.p12010, "", Urls.LeavingCert.HL.HomeEconomics.marking2010),
+
+    RELIGION20100(Urls.JuniorCert.OL.Religion.p12010, "", ""),
+    RELIGION20101(Urls.JuniorCert.HL.Religion.p12010, "", Urls.JuniorCert.HL.Religion.marking2010),
+    RELIGION20102(Urls.LeavingCert.OL.Religion.p12010, "", ""),
+    RELIGION20103(Urls.LeavingCert.HL.Religion.p12010, "", ""),
+
+    METALWORK20100(Urls.JuniorCert.OL.Metalwork.p12010, "", Urls.JuniorCert.OL.Metalwork.marking2010),
+    METALWORK20101(Urls.JuniorCert.HL.Metalwork.p12010, "", Urls.JuniorCert.HL.Metalwork.marking2010),
+    METALWORK20102("", "", ""),
+    METALWORK20103("", "", ""),
+
+    WOODWORK20100(Urls.JuniorCert.OL.Woodwork.p12010, Urls.JuniorCert.OL.Woodwork.p22010, Urls.JuniorCert.OL.Woodwork.marking2010),
+    WOODWORK20101(Urls.JuniorCert.OL.Woodwork.p12010, Urls.JuniorCert.OL.Woodwork.p22010, Urls.JuniorCert.OL.Woodwork.marking2010),
+    WOODWORK20102("", "", ""),
+    WOODWORK20103("", "", "");
+
 
     String urlP1;
     String urlP2;
